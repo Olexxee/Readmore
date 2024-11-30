@@ -1,8 +1,10 @@
 body {
   font-family: monospace;
-  margin: 5rem 10rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
   line-height: 1.5rem;
-  min-height: 100vh;
+  height: 100vh;
   background: linear-gradient(
       rgba(135, 68, 255, 0.4),
       rgba(135, 60, 255, 0) 80%
@@ -32,4 +34,10 @@ body {
 
 #more {
   display: none;
+}
+
+@media (max-width: 750px) {
+  p {
+    line-height: 1.5 rem;
+  }
 }
